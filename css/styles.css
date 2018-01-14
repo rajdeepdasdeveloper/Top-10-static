@@ -1,0 +1,68 @@
+/* CUSTOM CSS */
+/* ### SCSS PARTIAL IMPORT ### */
+/* ### COLORS ### */
+/* ### FONTS ### */
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+/* ### GLOBAL DEFINITIONS ### */
+.outermost {
+  overflow: hidden;
+}
+
+#header {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+#header #main-navigation {
+  float: right;
+  padding-top: 14px;
+}
+#header #main-navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+#header #main-navigation ul li a {
+  padding: 7px 10px;
+  color: #222;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ### BANNER ### */
+.banner {
+  margin-top: 80px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .overlay.overlay1 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.banner .container {
+  position: relative;
+}
+.banner .banner-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.banner .banner-text h1 {
+  font-size: 150px;
+  font-weight: bold;
+  color: #111;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
