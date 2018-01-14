@@ -20,7 +20,8 @@ body{
 #header{
 	position: fixed;
 	background-color: #fff;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	/*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);*/
+	border-bottom:1px solid #d5d5d5;
 	top:0;
 	left: 0;
 	width:100%;
@@ -73,6 +74,109 @@ body{
 			font-weight: bold;
 			color:#111;
 			font-family: 'Oswald', sans-serif;
+		}
+	}
+}
+
+/* MAIN CONTENT */
+
+#main-content.main{
+	margin-top:50px;
+}
+
+/* THUMBNAIL SECTIONS */
+
+.thumbnail-section{
+	padding-bottom: 50px;
+	.section-heading{
+		h2{
+			text-transform: uppercase;
+			color:#222;
+			font-family: 'Oswald', sans-serif;
+			color:$base-blue;
+			span{
+				color:$base-red;
+				font-weight: normal;
+			}
+		}
+	}
+	.section-body{
+		.content-inner-wrapper{
+			padding-bottom: 15px;
+		}
+		.content-images{
+			img{
+				max-width: 100%;
+				height:auto;
+			}
+		}
+		.content-text{
+			.field-heading{
+				h4{
+					font-family: 'Oswald', sans-serif;
+					.base-blue{
+						color:$base-blue;
+						text-transform: uppercase;
+					}
+					.base-red{
+						color:$base-red;
+						font-weight: normal;
+					}
+				}
+			}
+			.field-description{
+				
+			}
+			.view-list{
+				a{
+					text-transform: uppercase;
+					color:#222;
+					font-family: 'Oswald', sans-serif;
+					padding: 7px 15px;
+					display: inline-block;
+					border: 1px solid #d5d5d5;
+					text-decoration: none !important;
+					-webkit-border-radius: 4px;
+					-moz-border-radius: 4px;
+					border-radius: 4px;
+					&:hover{
+						border: 1px solid #b5b5b5;
+						background-color: #e5e5e5;
+					}
+					.base-blue{
+						color:$base-blue;
+					}
+					.base-red{
+						color:$base-red;
+					}
+				}
+			}
+		}
+	}
+	.show-more{
+		a{
+			margin-top:15px;
+			text-transform: uppercase;
+			color:#222;
+			font-family: 'Oswald', sans-serif;
+			padding: 7px 15px;
+			font-size: 20px;
+			display: inline-block;
+			border: 1px solid #d5d5d5;
+			text-decoration: none !important;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			&:hover{
+				border: 1px solid #b5b5b5;
+				background-color: #e5e5e5;
+			}
+			.base-blue{
+				color:$base-blue;
+			}
+			.base-red{
+				color:$base-red;
+			}
 		}
 	}
 }
